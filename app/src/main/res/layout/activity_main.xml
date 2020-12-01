@@ -25,36 +25,34 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="157dp"
         android:layout_marginEnd="-1dp"
+        android:background="#E7D40A"
+
         android:focusable="true"
         android:hint="Enter Name"
-        android:background="#E7D40A"
-        android:textSize="24dp"
+        android:textSize="24dp" />
 
-       />
     <EditText
         android:id="@+id/editText2"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_below="@+id/editText"
-       android:layout_centerInParent="true"
-        android:layout_marginTop="1dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="1dp"
+        android:background="#E7D40A"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textSize="24dp"
-        android:background="#E7D40A"/>
+        android:textSize="24dp" />
+
     <Button
+        android:id="@+id/button"
         android:layout_width="222dp"
         android:layout_height="wrap_content"
-        android:text="login"
-        android:id="@+id/button"
         android:layout_below="@id/editText2"
-        android:layout_centerInParent="true"
-        android:background="#E36B2C"/>
-
-
-
-
+       android:layout_centerInParent="true"
+        android:layout_marginTop="27dp"
+        android:background="#E36B2C"
+        android:text="login" />
 
 
 </RelativeLayout>
