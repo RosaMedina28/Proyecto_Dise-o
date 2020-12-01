@@ -20,54 +20,39 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
         android:layout_marginTop="157dp"
         android:layout_marginEnd="-1dp"
-        android:layout_marginRight="-1dp"
         android:focusable="true"
         android:hint="Enter Name"
-        android:textColorHighlight="#ff7eff15"
-        android:textColorHint="#ffff25e6" />
+        android:background="#E7D40A"
+        android:textSize="24dp"
 
-
+       />
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
         android:layout_below="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="-1dp"
-        android:layout_marginLeft="-1dp"
+       android:layout_centerInParent="true"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColorHint="#ffff299f" />
-
+        android:textSize="24dp"
+        android:background="#E7D40A"/>
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="222dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-95dp"
-        android:layout_marginRight="-95dp"
-        android:layout_marginBottom="105dp"
-        android:layout_toStartOf="@+id/textview"
-        android:layout_toLeftOf="@+id/textview"
-        android:text="login" />
+        android:text="login"
+        android:id="@+id/button"
+        android:layout_below="@id/editText2"
+        android:layout_centerInParent="true"
+        android:background="#E36B2C"/>
+
+
 
 
 
