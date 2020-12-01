@@ -94,7 +94,7 @@
 
     <Button
         android:id="@+id/button"
-        android:onClick="evento_registro"
+        android:onClick="evento_register"
         android:layout_width="222dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/genero"
