@@ -4,42 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".registro"
+    android:orientation="vertical"
     android:background="@drawable/ffo">
-
-
     <TextView
-        android:id = "@+id/textView"
+        android:id = "@+id/registro"
         android:layout_width = "wrap_content"
         android:layout_height = "wrap_content"
-        android:text = "INICIA SESIÓN"
+        android:text = "REGISTRO USUARIO"
         android:layout_centerHorizontal = "true"
         android:textColor = "#E7D40A"
-        android:textSize = "30dp" />
-
+        android:textSize = "30dp"
+        android:layout_marginTop="30dp"/>
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="330dp"
         android:layout_height="60dp"
+        android:layout_below="@+id/registro"
         android:layout_centerInParent="true"
-        android:layout_marginTop="157dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="-1dp"
         android:background="#E7D40A"
         android:focusable="true"
         android:hint="Enter Name"
         android:textSize="24dp" />
-
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/correo"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_below="@+id/editText"
         android:layout_centerInParent="true"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-1dp"
+        android:background="#E7D40A"
+        android:focusable="true"
+        android:hint="Enter correo"
+        android:textSize="24dp" />
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/correo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="1dp"
         android:background="#E7D40A"
-        android:hint="Password"
+        android:hint="Enter Lastname"
+        android:inputType="textPassword"
+        android:textSize="24dp" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/apellido"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        android:background="#E7D40A"
+        android:hint="Enter password"
         android:inputType="textPassword"
         android:textSize="24dp" />
 
@@ -47,13 +70,10 @@
         android:id="@+id/button"
         android:layout_width="222dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editText2"
-       android:layout_centerInParent="true"
+        android:layout_below="@id/password"
+        android:layout_centerInParent="true"
         android:layout_marginTop="27dp"
         android:background="#EF280F"
-        android:text="login" />
-
-
-
+        android:text="Crear usuario" />
 
 </RelativeLayout>
