@@ -30,22 +30,10 @@
         android:hint="Enter Name"
         android:textSize="24dp" />
     <EditText
-        android:id="@+id/correo"
-        android:layout_width="330dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/editText"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="-1dp"
-        android:background="#E7D40A"
-        android:focusable="true"
-        android:hint="Enter correo"
-        android:textSize="24dp" />
-    <EditText
         android:id="@+id/apellido"
         android:layout_width="330dp"
         android:layout_height="60dp"
-        android:layout_below="@+id/correo"
+        android:layout_below="@+id/editText"
         android:layout_centerInParent="true"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="1dp"
@@ -54,10 +42,34 @@
         android:inputType="textPassword"
         android:textSize="24dp" />
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/edad"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_below="@+id/apellido"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        android:background="#E7D40A"
+        android:hint="Enter edad"
+        android:inputType="textPassword"
+        android:textSize="24dp" />
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/edad"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-1dp"
+        android:background="#E7D40A"
+        android:focusable="true"
+        android:hint="Enter correo"
+        android:textSize="24dp" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/correo"
         android:layout_centerInParent="true"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="1dp"
@@ -66,11 +78,24 @@
         android:inputType="textPassword"
         android:textSize="24dp" />
 
+    <EditText
+        android:id="@+id/genero"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/password"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        android:background="#E7D40A"
+        android:hint="Enter genero"
+        android:inputType="textPassword"
+        android:textSize="24dp" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="222dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/password"
+        android:layout_below="@id/genero"
         android:layout_centerInParent="true"
         android:layout_marginTop="27dp"
         android:background="#EF280F"
