@@ -8,22 +8,26 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import java.util.Arrays;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     final private int request_code = 2000;
     private RecyclerView rvpermisos; //declaromos una varibale de tipo RecyclerView
-    Button btn_registro;
+    Button btn_login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        btn_login = findViewById(R.id.btn_login);
+        btn_login.setOnClickListener(this::evento_pasada);
 
         rvpermisos = findViewById(R.id.RVpermisos);//buscamos el RecyclerView en el xml
         rvpermisos.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL)); //añadimos un diseño al RecyclerView(linea separadora)
@@ -72,4 +76,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void evento_pasada(View view) {
+        Intent intent = new Intent (view.getContext(), registroActivity.class);
+        startActivityForResult(intent, 0);
+    }
 }

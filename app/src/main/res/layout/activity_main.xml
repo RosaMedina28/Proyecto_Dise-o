@@ -44,7 +44,8 @@
         android:textSize="24dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_login"
+        android:onClick="evento_pasada"
         android:layout_width="222dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/editText2"
