@@ -37,19 +37,19 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
 
         //PERMISOS
-        int permisso_loc = ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION);
-        int permiso_cont =  ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_CONTACTS);
+       /* int permisso_loc = ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION);
+        int permiso_cont =  ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_CONTACTS);*/
 
-        if (permisso_loc == PackageManager.PERMISSION_DENIED || permiso_cont == PackageManager.PERMISSION_DENIED)
+        /*if (permisso_loc == PackageManager.PERMISSION_DENIED || permiso_cont == PackageManager.PERMISSION_DENIED)
         {
             if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
                 requestPermissions(new String[] {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.READ_CONTACTS},
                         request_code);
             }
-        }
+        }*/
 
     }
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {//Parametros(idendificacion del la ventanita, identifico que permisos estoy solicitando en la ventanita en forma de arreglo, resivo un arreglo de 0 y -1 donde 0 es que acepto el permiso y -1 es que lo denego, asi con todos las permisos que solicite)
+   /* public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {//Parametros(idendificacion del la ventanita, identifico que permisos estoy solicitando en la ventanita en forma de arreglo, resivo un arreglo de 0 y -1 donde 0 es que acepto el permiso y -1 es que lo denego, asi con todos las permisos que solicite)
         //saber la informacion  y valores de las variables o arreglos
         Toast.makeText(this,Arrays.deepToString(permissions), Toast.LENGTH_SHORT).show();
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity{
                 }
             }
         }
-    }
+    }*/
 
     public void evento_pasada(View view) {
         Intent intent = new Intent (view.getContext(), registroActivity.class);
