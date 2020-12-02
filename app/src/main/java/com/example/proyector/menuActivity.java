@@ -22,21 +22,25 @@ public class menuActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_menu);
 
-        //PERMISOS
-        int camara = ActivityCompat.checkSelfPermission(menuActivity.this, Manifest.permission.ACCESS_FINE_LOCATION);
-        int contactos =  ActivityCompat.checkSelfPermission(menuActivity.this, Manifest.permission.READ_CONTACTS);
+
 
 
         new Handler().postDelayed(new Runnable() {
             public void run() {
+                //PERMISOS
+                int camara = ActivityCompat.checkSelfPermission(menuActivity.this, Manifest.permission.CAMERA);
+                int contactos =  ActivityCompat.checkSelfPermission(menuActivity.this, Manifest.permission.READ_CONTACTS);
+
                 if (camara == PackageManager.PERMISSION_DENIED || contactos == PackageManager.PERMISSION_DENIED){
                     Intent intent= new Intent(menuActivity.this, ReclyclerActivity.class);
                     startActivity(intent);
                     finish();
+                }else{
+                    Intent intent= new Intent(menuActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
                 }
-                Intent intent= new Intent(menuActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
+
             }
         }, DURACION_SPLASH);
     }

@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -28,6 +29,14 @@ public class PermisoAdapter extends RecyclerView.Adapter<PermisoAdapter.PermisoH
     @Override
     public void onBindViewHolder(@NonNull PermisoAdapter.PermisoHolder holder, int position) {
         holder.añadir_permisos(permisos.get(position));
+        switch (position){
+            case 0:
+
+                break;
+            case 1:
+
+                break;
+        }
     }
 
     @Override
@@ -40,7 +49,7 @@ public class PermisoAdapter extends RecyclerView.Adapter<PermisoAdapter.PermisoH
 
         public PermisoHolder(@NonNull View itemView) {
             super(itemView);
-            Nompermiso = itemView.findViewById(R.id.text_permiso);
+            //Nompermiso = itemView.findViewById(R.id.text_permiso);
         }
 
         public void añadir_permisos(Permiso permiso) {

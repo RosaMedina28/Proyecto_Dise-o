@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity{
         queue = Volley.newRequestQueue(this);
         //PERMISOS
        /* int permisso_loc = ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION);
-        int permiso_cont =  ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_CONTACTS);*/
+        int permiso_cont =  ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_CONTACTS);
 
-        /*if (permisso_loc == PackageManager.PERMISSION_DENIED || permiso_cont == PackageManager.PERMISSION_DENIED)
+        if (permisso_loc == PackageManager.PERMISSION_DENIED || permiso_cont == PackageManager.PERMISSION_DENIED)
         {
             if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
                 requestPermissions(new String[] {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.READ_CONTACTS},
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity{
     }*/
 
     public void evento_login(View view) {
-        String urlend = "http://192.168.2.9:8000/api/loginas";
+        String urlend = "http://192.168.1.71:8000/api/loginas";
         JSONObject datos = new JSONObject();
 
         EditText campo_email = findViewById(R.id.edit_email_l);
