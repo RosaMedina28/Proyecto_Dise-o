@@ -7,100 +7,115 @@
     tools:context=".registroActivity"
     android:background="@drawable/ffo">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id = "@+id/registro"
-        android:layout_width = "wrap_content"
-        android:layout_height = "wrap_content"
-        android:text = "REGISTRO USUARIO"
-        android:layout_centerHorizontal = "true"
-        android:textColor = "#E7D40A"
-        android:textSize = "30dp"
-        android:layout_marginTop="30dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="330dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/registro"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="-1dp"
-        android:background="#E7D40A"
-        android:focusable="true"
-        android:hint="Enter Name"
-        android:textSize="24dp" />
-    <EditText
-        android:id="@+id/apellido"
-        android:layout_width="330dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/editText"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="1dp"
-        android:background="#E7D40A"
-        android:hint="Enter Lastname"
-        android:inputType="textPassword"
-        android:textSize="24dp" />
-    <EditText
-        android:id="@+id/edad"
-        android:layout_width="330dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/apellido"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="1dp"
-        android:background="#E7D40A"
-        android:hint="Enter edad"
-        android:inputType="textPassword"
-        android:textSize="24dp" />
-    <EditText
-        android:id="@+id/correo"
-        android:layout_width="330dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/edad"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="-1dp"
-        android:background="#E7D40A"
-        android:focusable="true"
-        android:hint="Enter correo"
-        android:textSize="24dp" />
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="330dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/correo"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="1dp"
-        android:background="#E7D40A"
-        android:hint="Enter password"
-        android:inputType="textPassword"
-        android:textSize="24dp" />
+            <TextView
+                android:id = "@+id/registro"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "REGISTRO USUARIO"
+                android:layout_centerHorizontal = "true"
+                android:textColor = "#E7D40A"
+                android:textSize = "30dp"
+                android:layout_marginTop="30dp"/>
 
-    <EditText
-        android:id="@+id/genero"
-        android:layout_width="330dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/password"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="1dp"
-        android:background="#E7D40A"
-        android:hint="Enter genero"
-        android:inputType="textPassword"
-        android:textSize="24dp" />
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/registro"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="-1dp"
+                android:background="#E7D40A"
+                android:focusable="true"
+                android:hint="Enter Name"
+                android:textSize="24dp" />
+            <EditText
+                android:id="@+id/apellido"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/editText"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="1dp"
+                android:background="#E7D40A"
+                android:hint="Enter Lastname"
+                android:inputType="textPassword"
+                android:textSize="24dp" />
+            <EditText
+                android:id="@+id/edad"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/apellido"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="1dp"
+                android:background="#E7D40A"
+                android:hint="Enter edad"
+                android:inputType="textPassword"
+                android:textSize="24dp" />
+            <EditText
+                android:id="@+id/correo"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/edad"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="-1dp"
+                android:background="#E7D40A"
+                android:focusable="true"
+                android:hint="Enter correo"
+                android:textSize="24dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:onClick="evento_register"
-        android:layout_width="222dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/genero"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="27dp"
-        android:background="#EF280F"
-        android:text="Crear usuario" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/correo"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="1dp"
+                android:background="#E7D40A"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/genero"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/password"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="1dp"
+                android:background="#E7D40A"
+                android:hint="Enter genero"
+                android:inputType="textPassword"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:onClick="evento_register"
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/genero"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="27dp"
+                android:background="#EF280F"
+                android:text="Crear usuario" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
 
 </RelativeLayout>

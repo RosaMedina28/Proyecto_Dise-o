@@ -19,13 +19,15 @@ import android.widget.Toast;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity{
-    final private int request_code = 2000;
+    //final private int request_code = 2000;
     private RecyclerView rvpermisos; //declaromos una varibale de tipo RecyclerView
     Button btn_login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
         btn_login = findViewById(R.id.btn_login);
         btn_login.setOnClickListener(this::evento_pasada);
 
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity{
         }*/
 
     }
-   /* public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {//Parametros(idendificacion del la ventanita, identifico que permisos estoy solicitando en la ventanita en forma de arreglo, resivo un arreglo de 0 y -1 donde 0 es que acepto el permiso y -1 es que lo denego, asi con todos las permisos que solicite)
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {//Parametros(idendificacion del la ventanita, identifico que permisos estoy solicitando en la ventanita en forma de arreglo, resivo un arreglo de 0 y -1 donde 0 es que acepto el permiso y -1 es que lo denego, asi con todos las permisos que solicite)
         //saber la informacion  y valores de las variables o arreglos
         Toast.makeText(this,Arrays.deepToString(permissions), Toast.LENGTH_SHORT).show();
 
@@ -72,12 +74,13 @@ public class MainActivity extends AppCompatActivity{
                 if(permiso == PackageManager.PERMISSION_GRANTED){
 
                 }
+
             }
         }
-    }*/
+    }
 
     public void evento_pasada(View view) {
-        Intent intent = new Intent (view.getContext(), registroActivity.class);
+        Intent intent = new Intent (MainActivity.this, registroActivity.class);
         startActivityForResult(intent, 0);
     }
 }
