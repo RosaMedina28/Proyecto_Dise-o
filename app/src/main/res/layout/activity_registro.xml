@@ -47,7 +47,7 @@
                 android:layout_marginEnd="1dp"
                 android:background="#E7D40A"
                 android:hint="Enter Lastname"
-                android:inputType="textPassword"
+
                 android:textSize="24dp" />
             <EditText
                 android:id="@+id/edit_edad"
@@ -59,7 +59,7 @@
                 android:layout_marginEnd="1dp"
                 android:background="#E7D40A"
                 android:hint="Enter edad"
-                android:inputType="textPassword"
+
                 android:textSize="24dp" />
             <EditText
                 android:id="@+id/edit_correo"
@@ -97,7 +97,7 @@
                 android:layout_marginEnd="1dp"
                 android:background="#E7D40A"
                 android:hint="Enter genero"
-                android:inputType="textPassword"
+
                 android:textSize="24dp" />
 
             <Button
