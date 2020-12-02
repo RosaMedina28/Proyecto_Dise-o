@@ -94,7 +94,7 @@ public class ReclyclerActivity extends AppCompatActivity {
                     Intent intent = new Intent (ReclyclerActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
-                Toast.makeText(this, "No se an consedido todos los permisos", Toast.LENGTH_SHORT).show();
+
 
             }
         }
