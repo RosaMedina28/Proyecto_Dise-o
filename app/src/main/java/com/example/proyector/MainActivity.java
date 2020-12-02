@@ -14,13 +14,24 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity{
     //final private int request_code = 2000;
-    private RecyclerView rvpermisos; //declaromos una varibale de tipo RecyclerView
+    RequestQueue queue;
     Button btn_login;
 
     @Override
@@ -29,15 +40,9 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
 
         btn_login = findViewById(R.id.btn_login);
-        btn_login.setOnClickListener(this::evento_pasada);
+        btn_login.setOnClickListener(this::evento_login);
 
-        rvpermisos = findViewById(R.id.RVpermisos);//buscamos el RecyclerView en el xml
-        rvpermisos.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL)); //añadimos un diseño al RecyclerView(linea separadora)
-        //RECLYLCERVIEW
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this); //RecyclerView de forma linearlayout
-        rvpermisos.setLayoutManager(linearLayoutManager); //se lo asignamos
-        setContentView(R.layout.activity_main);
-
+        queue = Volley.newRequestQueue(this);
         //PERMISOS
        /* int permisso_loc = ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION);
         int permiso_cont =  ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_CONTACTS);*/
@@ -51,7 +56,8 @@ public class MainActivity extends AppCompatActivity{
         }*/
 
     }
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {//Parametros(idendificacion del la ventanita, identifico que permisos estoy solicitando en la ventanita en forma de arreglo, resivo un arreglo de 0 y -1 donde 0 es que acepto el permiso y -1 es que lo denego, asi con todos las permisos que solicite)
+
+    /*public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {//Parametros(idendificacion del la ventanita, identifico que permisos estoy solicitando en la ventanita en forma de arreglo, resivo un arreglo de 0 y -1 donde 0 es que acepto el permiso y -1 es que lo denego, asi con todos las permisos que solicite)
         //saber la informacion  y valores de las variables o arreglos
         Toast.makeText(this,Arrays.deepToString(permissions), Toast.LENGTH_SHORT).show();
 
@@ -77,10 +83,47 @@ public class MainActivity extends AppCompatActivity{
 
             }
         }
+    }*/
+
+    public void evento_login(View view) {
+        String urlend = "http://192.168.2.9:8000/api/loginas";
+        JSONObject datos = new JSONObject();
+
+        EditText campo_email = findViewById(R.id.edit_email_l);
+        EditText campo_password = findViewById(R.id.edit_password_l);
+
+
+        try {
+            datos.put("email", campo_email.getText().toString());
+            datos.put("password",campo_password.getText().toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        JsonObjectRequest postrequest = new JsonObjectRequest(Request.Method.POST, urlend, datos, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    String token = response.getString("token");
+                    Toast.makeText(MainActivity.this, response.toString(), Toast.LENGTH_SHORT).show();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        queue.add(postrequest);
+
+        //Intent intent = new Intent (MainActivity.this, registroActivity.class);
+        //startActivityForResult(intent, 0);
     }
 
-    public void evento_pasada(View view) {
+    public void evento_registro_cambio(View view) {
         Intent intent = new Intent (MainActivity.this, registroActivity.class);
-        startActivityForResult(intent, 0);
+        startActivity(intent);
     }
 }

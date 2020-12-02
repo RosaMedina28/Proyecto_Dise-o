@@ -26,7 +26,7 @@
                 android:layout_marginTop="30dp"/>
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/edit_nombre"
                 android:layout_width="330dp"
                 android:layout_height="60dp"
                 android:layout_below="@+id/registro"
@@ -38,10 +38,10 @@
                 android:hint="Enter Name"
                 android:textSize="24dp" />
             <EditText
-                android:id="@+id/apellido"
+                android:id="@+id/edit_apellido"
                 android:layout_width="330dp"
                 android:layout_height="60dp"
-                android:layout_below="@+id/editText"
+                android:layout_below="@+id/edit_nombre"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="1dp"
@@ -50,10 +50,10 @@
                 android:inputType="textPassword"
                 android:textSize="24dp" />
             <EditText
-                android:id="@+id/edad"
+                android:id="@+id/edit_edad"
                 android:layout_width="330dp"
                 android:layout_height="60dp"
-                android:layout_below="@+id/apellido"
+                android:layout_below="@+id/edit_apellido"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="1dp"
@@ -62,10 +62,10 @@
                 android:inputType="textPassword"
                 android:textSize="24dp" />
             <EditText
-                android:id="@+id/correo"
+                android:id="@+id/edit_correo"
                 android:layout_width="330dp"
                 android:layout_height="60dp"
-                android:layout_below="@+id/edad"
+                android:layout_below="@+id/edit_edad"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="-1dp"
@@ -75,10 +75,10 @@
                 android:textSize="24dp" />
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/edit_password"
                 android:layout_width="330dp"
                 android:layout_height="60dp"
-                android:layout_below="@+id/correo"
+                android:layout_below="@+id/edit_correo"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="1dp"
@@ -88,10 +88,10 @@
                 android:textSize="24dp" />
 
             <EditText
-                android:id="@+id/genero"
+                android:id="@+id/edit_genero"
                 android:layout_width="330dp"
                 android:layout_height="60dp"
-                android:layout_below="@+id/password"
+                android:layout_below="@+id/edit_password"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="1dp"
@@ -105,7 +105,7 @@
                 android:onClick="evento_register"
                 android:layout_width="222dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/genero"
+                android:layout_below="@id/edit_genero"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="27dp"
                 android:background="#EF280F"

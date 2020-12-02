@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="permiso"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:id="@+id/text_permiso"/>
 
     <Switch

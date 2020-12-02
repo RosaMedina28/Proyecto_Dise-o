@@ -23,7 +23,7 @@ public class registroActivity extends AppCompatActivity {
     }
 
     public void evento_register(View view) {
-        EditText campo_apellido = findViewById(R.id.apellido);
-        Toast.makeText(this, campo_apellido.getText().toString(), Toast.LENGTH_SHORT).show();
+        EditText edit_apellido = findViewById(R.id.edit_apellido);
+        Toast.makeText(this, edit_apellido.getText().toString(), Toast.LENGTH_SHORT).show();
     }
 }
