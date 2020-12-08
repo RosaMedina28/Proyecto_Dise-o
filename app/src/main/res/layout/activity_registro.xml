@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".registroActivity"
-    android:background="@drawable/ffo">
+    android:background="@drawable/eee">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
                 android:layout_height = "wrap_content"
                 android:text = "REGISTRO USUARIO"
                 android:layout_centerHorizontal = "true"
-                android:textColor = "#E7D40A"
+                android:textColor = "#000000"
                 android:textSize = "30dp"
                 android:layout_marginTop="30dp"/>
 
@@ -33,10 +33,11 @@
                 android:layout_centerInParent="true"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="-1dp"
-                android:background="#E7D40A"
+                android:background="#7E57C2"
                 android:focusable="true"
                 android:hint="Enter Name"
-                android:textSize="24dp" />
+                android:textSize="24dp"
+                android:textColorHint="#EDE7F6"/>
             <EditText
                 android:id="@+id/edit_apellido"
                 android:layout_width="330dp"
@@ -45,9 +46,9 @@
                 android:layout_centerInParent="true"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="1dp"
-                android:background="#E7D40A"
+                android:background="#7E57C2"
                 android:hint="Enter Lastname"
-
+                 android:textColorHint="#EDE7F6"
                 android:textSize="24dp" />
             <EditText
                 android:id="@+id/edit_edad"
@@ -57,9 +58,9 @@
                 android:layout_centerInParent="true"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="1dp"
-                android:background="#E7D40A"
+                android:background="#7E57C2"
                 android:hint="Enter edad"
-
+                android:textColorHint="#EDE7F6"
                 android:textSize="24dp" />
             <EditText
                 android:id="@+id/edit_correo"
@@ -69,10 +70,11 @@
                 android:layout_centerInParent="true"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="-1dp"
-                android:background="#E7D40A"
+                android:background="#7E57C2"
                 android:focusable="true"
                 android:hint="Enter correo"
-                android:textSize="24dp" />
+                android:textSize="24dp"
+                android:textColorHint="#EDE7F6"/>
 
             <EditText
                 android:id="@+id/edit_password"
@@ -82,10 +84,11 @@
                 android:layout_centerInParent="true"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="1dp"
-                android:background="#E7D40A"
+                android:background="#7E57C2"
                 android:hint="Enter password"
                 android:inputType="textPassword"
-                android:textSize="24dp" />
+                android:textSize="24dp"
+                android:textColorHint="#EDE7F6"/>
 
             <EditText
                 android:id="@+id/edit_genero"
@@ -95,8 +98,9 @@
                 android:layout_centerInParent="true"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="1dp"
-                android:background="#E7D40A"
+                android:background="#7E57C2"
                 android:hint="Enter genero"
+                android:textColorHint="#EDE7F6"
 
                 android:textSize="24dp" />
 
@@ -108,7 +112,8 @@
                 android:layout_below="@id/edit_genero"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="27dp"
-                android:background="#EF280F"
+                android:background="#9575DC"
+                android:textColor="#EDE7F6"
                 android:text="Crear usuario" />
 
         </RelativeLayout>
