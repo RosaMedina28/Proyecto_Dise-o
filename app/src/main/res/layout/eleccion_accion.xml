@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout
+    <GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -7,68 +7,92 @@
         android:orientation="vertical"
     android:background="@drawable/eee"
         >
-    <Button
-        android:id="@+id/temphumedad"
-
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="400dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/T_Hu"
-        android:layout_weight="1"
-        />
     <TextView
 
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
+        android:layout_height="57dp"
+        android:text=""
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="19dp" />
+    <TextView
 
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:text=""
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/temphumedad"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="210dp"
+        android:layout_height="150dp"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:background="@drawable/T_Hu" />
+
+    <TextView
+
+        android:layout_width="197dp"
+        android:layout_height="87dp"
+        android:layout_marginLeft="10dp"
         android:text="Temperatura y Humedad"
         android:textColor="#000000"
-        android:gravity="top|center"
-        android:textSize="40dp"
-        />
+        android:textSize="33dp" />
+
+
+
+
     <Button
         android:id="@+id/foco"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="400dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="1"
+        android:layout_width="226dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal|right"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/focoEn"
         android:backgroundTint=""
-
         android:tint="@android:color/background_light" />
-    <TextView
-        android:layout_width="440dp"
-        android:layout_gravity="center"
 
-        android:layout_height="50dp"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_gravity="center|right"
         android:text="Controlar Focos"
         android:textColor="#000000"
-        android:gravity="top|center"
-        android:textSize="40dp"
-        />
+        android:textSize="33dp" />
+
     <Button
         android:id="@+id/hist"
         style="?android:attr/buttonStyleSmall"
-        android:background="@drawable/historial"
-        android:layout_width="400dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="210dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center|top"
+
         android:layout_weight="1"
-         />
+        android:background="@drawable/historial" />
+
     <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-
-        android:layout_height="50dp"
-        android:text="Historial focos del hogar"
+        android:layout_width="238dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center|top"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal"
+        android:text="Historial Focos del Hogar"
         android:textColor="#000000"
-        android:gravity="top|center"
-        android:textSize="40dp"
-        />
+        android:textSize="33dp" />
 
-    </LinearLayout>
+    </GridLayout>
 
