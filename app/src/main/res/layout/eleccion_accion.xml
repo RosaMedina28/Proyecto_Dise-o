@@ -11,7 +11,7 @@
         android:id="@+id/temphumedad"
 
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="450dp"
+        android:layout_width="400dp"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/T_Hu"
@@ -31,7 +31,7 @@
     <Button
         android:id="@+id/foco"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="450dp"
+        android:layout_width="400dp"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
@@ -52,18 +52,19 @@
     <Button
         android:id="@+id/hist"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="450dp"
+        android:background="@drawable/historial"
+        android:layout_width="400dp"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
          />
     <TextView
 
-        android:layout_width="440dp"
+        android:layout_width="wrap_content"
         android:layout_gravity="center"
 
         android:layout_height="50dp"
-        android:text="Historial de Encendido"
+        android:text="Historial focos del hogar"
         android:textColor="#000000"
         android:gravity="top|center"
         android:textSize="40dp"
