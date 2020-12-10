@@ -59,7 +59,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="1dp"
                 android:background="#7E57C2"
-                android:hint="Enter edad"
+                android:hint="Enter age"
                 android:textColorHint="#EDE7F6"
                 android:textSize="24dp" />
             <EditText
@@ -72,7 +72,7 @@
                 android:layout_marginEnd="-1dp"
                 android:background="#7E57C2"
                 android:focusable="true"
-                android:hint="Enter correo"
+                android:hint="Enter mail"
                 android:textSize="24dp"
                 android:textColorHint="#EDE7F6"/>
 
@@ -99,7 +99,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="1dp"
                 android:background="#7E57C2"
-                android:hint="Enter genero"
+                android:hint="Enter gender"
                 android:textColorHint="#EDE7F6"
 
                 android:textSize="24dp" />
@@ -114,7 +114,7 @@
                 android:layout_marginTop="27dp"
                 android:background="#9575DC"
                 android:textColor="#EDE7F6"
-                android:text="Crear usuario" />
+                android:text="Create User" />
 
         </RelativeLayout>
 
