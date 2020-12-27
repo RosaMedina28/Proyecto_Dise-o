@@ -7,9 +7,11 @@
     tools:context=".ReclyclerActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_permisos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/rv_permisos">
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="27dp">
 
     </androidx.recyclerview.widget.RecyclerView>
 
