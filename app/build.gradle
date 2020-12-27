@@ -13,7 +13,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    dependencies {
+        implementation "androidx.cardview:cardview:1.0.0"
+    }
     buildTypes {
         release {
             minifyEnabled false

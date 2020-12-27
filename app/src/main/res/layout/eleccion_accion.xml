@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-    android:background="@drawable/eee"
+    android:background="@drawable/cardvv"
         >
     <TextView
 
@@ -25,7 +25,7 @@
         android:textSize="19dp" />
 
     <Button
-        android:id="@+id/temphumedad"
+        android:id="@+id/temp"
         android:layout_marginTop="70dp"
         android:layout_marginLeft="10dp"
         style="?android:attr/buttonStyleSmall"
@@ -33,10 +33,7 @@
         android:layout_height="150dp"
         android:layout_column="1"
         android:layout_row="1"
-        android:background="@drawable/tempeee" />
-
-
-
+        android:background="@drawable/teeem" />
 
 
     <Button
@@ -44,47 +41,41 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="226dp"
         android:layout_height="150dp"
-        android:layout_gravity="center_horizontal|right"
-        android:layout_column="1"
         android:layout_row="1"
+        android:layout_column="1"
+        android:layout_gravity="center_horizontal|right"
         android:layout_marginTop="70dp"
         android:layout_marginRight="10dp"
-        android:background="@drawable/foco"
+        android:background="@drawable/fooco"
         android:backgroundTint=""
         android:tint="@android:color/background_light" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="57dp"
-        android:layout_gravity="center|right"
-        android:text="Controlar Focos"
-        android:textColor="#000000"
-        android:textSize="33dp" />
 
     <Button
         android:id="@+id/hist"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="210dp"
         android:layout_height="150dp"
-        android:layout_marginLeft="10dp"
-        android:layout_column="1"
         android:layout_row="3"
+        android:layout_column="1"
+        android:layout_gravity="center|right"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="70dp"
-        android:layout_gravity="center|top"
-
         android:layout_weight="1"
         android:background="@drawable/historial" />
 
-    <TextView
-
-        android:layout_width="238dp"
-        android:layout_height="90dp"
-        android:layout_gravity="center|top"
+    <Button
+        android:id="@+id/hum"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="210dp"
+        android:layout_height="150dp"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_gravity="center|left"
         android:layout_marginLeft="10dp"
-        android:gravity="center_horizontal"
-        android:text="Historial Focos del Hogar"
-        android:textColor="#000000"
-        android:textSize="33dp" />
+        android:layout_marginTop="70dp"
+        android:layout_weight="1"
+        android:background="@drawable/hum" />
 
-    </GridLayout>
+
+</GridLayout>
 
