@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-    android:background="@drawable/cardvv"
+    android:background="@drawable/icono"
         >
     <TextView
 
@@ -50,27 +50,15 @@
         android:backgroundTint=""
         android:tint="@android:color/background_light" />
 
-    <Button
-        android:id="@+id/hist"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="210dp"
-        android:layout_height="150dp"
-        android:layout_row="3"
-        android:layout_column="1"
-        android:layout_gravity="center|right"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="70dp"
-        android:layout_weight="1"
-        android:background="@drawable/historial" />
 
     <Button
         android:id="@+id/hum"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="210dp"
+        android:layout_width="211dp"
         android:layout_height="150dp"
         android:layout_row="3"
         android:layout_column="1"
-        android:layout_gravity="center|left"
+        android:layout_gravity="center"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="70dp"
         android:layout_weight="1"

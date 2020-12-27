@@ -9,43 +9,12 @@
     <androidx.cardview.widget.CardView
         android:layout_width="521dp"
         android:layout_height="169dp"
-        android:layout_marginTop="350dp"
         android:layout_gravity="center"
+        android:layout_marginTop="350dp"
         android:elevation="15dp"
 
 
         app:cardBackgroundColor="#7E57C2">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="249dp"
-            android:layout_height="150dp"
-            app:cardBackgroundColor="#7E57C2">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:text="Temperatura"
-                android:textColor="#fff"
-                android:textSize="40dp" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="172dp"
-                android:layout_height="65dp"
-                android:layout_gravity="bottom|center">
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-
-                    android:text=""
-                    android:textSize="35dp" />
-            </androidx.cardview.widget.CardView>
-
-        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="251dp"
@@ -75,6 +44,37 @@
                     android:text=""
                     android:textSize="35dp" />
             </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="249dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="#7E57C2">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:text="Temperatura"
+            android:textColor="#fff"
+            android:textSize="40dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="172dp"
+            android:layout_height="65dp"
+            android:layout_gravity="bottom|center">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text=""
+                android:textSize="35dp" />
         </androidx.cardview.widget.CardView>
 
     </androidx.cardview.widget.CardView>
