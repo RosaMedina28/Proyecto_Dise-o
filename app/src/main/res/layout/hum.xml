@@ -11,8 +11,7 @@
         android:layout_width="270dp"
         android:layout_height="240dp"
         android:layout_centerInParent="true"
-
-        android:background="@drawable/hh"
+        android:background="@drawable/humedad"
         android:baselineAligned="true" />
 
     <TextView
