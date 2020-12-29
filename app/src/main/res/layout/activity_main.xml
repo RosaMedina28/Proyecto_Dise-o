@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/OO">
-
+    android:background="@drawable/oo">
 
 
     <EditText
@@ -18,7 +17,7 @@
         android:layout_marginEnd="-1dp"
         android:focusable="true"
         android:background="#7E57C2"
-        android:hint="Enter Email"
+        android:hint="Correo"
         android:textColorHint="#EDE7F6"
         android:textSize="24dp" />
 
@@ -31,7 +30,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="1dp"
         android:background="#7E57C2"
-        android:hint="Password"
+        android:hint="Contraseña"
         android:inputType="textPassword"
         android:textSize="24dp"
         android:textColorHint="#EDE7F6"/>
@@ -46,12 +45,12 @@
         android:layout_marginTop="27dp"
         android:background="#9575DC"
         android:textColor="#EDE7F6"
-        android:text="login" />
+        android:text="Iniciar Sesion" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="or"
+        android:text="O"
         android:textSize="20dp"
         android:textColor="#000000"
         android:layout_below="@id/btn_login"
@@ -62,7 +61,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Acount?"
+        android:text="¿Crear Una Cuenta?"
         android:onClick="evento_registro_cambio"
         android:textSize="20dp"
         android:textColor="#000000"

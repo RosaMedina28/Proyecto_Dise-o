@@ -48,8 +48,9 @@
         android:layout_column="0"
         android:layout_gravity="center"
         android:background="@drawable/humedad" />
+
     <androidx.cardview.widget.CardView
-        android:layout_width="195dp"
+        android:layout_width="198dp"
         android:layout_height="150dp"
         android:layout_row="1"
         android:layout_column="2"
@@ -62,6 +63,15 @@
         android:layout_column="0"
         android:layout_marginTop="440dp"
         android:background="@drawable/cochera" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="198dp"
+        android:layout_height="151dp"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:layout_gravity="center"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/cerrar" />
 
 </GridLayout>
 
