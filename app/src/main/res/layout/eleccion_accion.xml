@@ -31,6 +31,7 @@
         android:elevation="15dp"
         android:background="@drawable/tempera"
         />
+
     <androidx.cardview.widget.CardView
         android:layout_width="193dp"
         android:layout_height="150dp"
@@ -41,6 +42,7 @@
         android:background="@drawable/control"
         android:backgroundTint=""
         android:tint="@android:color/background_light" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="218dp"
         android:layout_height="150dp"
