@@ -35,7 +35,7 @@ public class registroActivity extends AppCompatActivity {
     }
 
     public void evento_register(View view) {
-        String urlend = "http://192.168.1.71:8000/api/registroas";
+        String urlend = "http://192.168.0.31:8000/api/registroas";
         JSONObject datos = new JSONObject();
 
         EditText edit_nombre = findViewById(R.id.edit_nombre);

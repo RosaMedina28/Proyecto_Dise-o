@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -34,13 +35,26 @@ public class MainActivity extends AppCompatActivity{
     //final private int request_code = 2000;
     RequestQueue queue;
     Button btn_login;
-
+    private RadioButton RB;
+private boolean isActivateRB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        RB=(RadioButton) findViewById(R.id.RBsesion);
+        isActivateRB=RB.isChecked();
+        RB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(isActivateRB)
+                {
+                    RB.setChecked(false);
+                }
+                isActivateRB=RB.isChecked();
+            }
+        });
 
         btn_login = findViewById(R.id.btn_login);
         btn_login.setOnClickListener(this::evento_login);
@@ -91,7 +105,7 @@ public class MainActivity extends AppCompatActivity{
     }*/
 
     public void evento_login(View view) {
-        String urlend = "http://192.168.1.71:8000/api/loginas";
+        String urlend = "http://192.168.0.31:8000/api/loginas";
         JSONObject datos = new JSONObject();
 
         EditText campo_email = findViewById(R.id.edit_email_l);
