@@ -27,6 +27,7 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity{
@@ -34,10 +35,12 @@ public class MainActivity extends AppCompatActivity{
     RequestQueue queue;
     Button btn_login;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         btn_login = findViewById(R.id.btn_login);
         btn_login.setOnClickListener(this::evento_login);
@@ -56,6 +59,8 @@ public class MainActivity extends AppCompatActivity{
         }*/
 
     }
+
+
 
     /*public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {//Parametros(idendificacion del la ventanita, identifico que permisos estoy solicitando en la ventanita en forma de arreglo, resivo un arreglo de 0 y -1 donde 0 es que acepto el permiso y -1 es que lo denego, asi con todos las permisos que solicite)
         //saber la informacion  y valores de las variables o arreglos

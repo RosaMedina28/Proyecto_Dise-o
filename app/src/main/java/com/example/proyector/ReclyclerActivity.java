@@ -21,6 +21,9 @@ import java.util.Arrays;
 
 public class ReclyclerActivity extends AppCompatActivity {
     private RecyclerView rv_permisos;
+
+
+
     Switch s1,s2;
     final private int request_code1 =191700;
     final private int request_code2 =191702;
@@ -29,6 +32,8 @@ public class ReclyclerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lista_permisos);
+
+
 
         //rv_permisos = findViewById(R.id.rv_permisos);
         //rv_permisos.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL)); //linea de separacion
@@ -44,6 +49,9 @@ public class ReclyclerActivity extends AppCompatActivity {
         //rv_permisos.setAdapter(Adapter);
 
     }
+
+
+
     public void evento_switch(View view) {
 
         s1 = findViewById(R.id.switch_permiso1);
