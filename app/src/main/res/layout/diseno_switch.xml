@@ -31,14 +31,9 @@
         android:layout_height="match_parent"
         android:layout_alignParentEnd="true"
         android:layout_centerInParent="true"
-<<<<<<< HEAD
-        android:id="@+id/switch_foco"
+        android:id="@+id/switch_foco"/>
 
-=======
-        android:id="@+id/switch_cuarto"
-        android:onClick=""
->>>>>>> 7f95e3d5e7480279b37700cfe9bd0a9cd784584b
-        />
+
 </LinearLayout>
 </LinearLayout>
 
@@ -66,7 +61,6 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerInParent="true"
                 android:id="@+id/Switch_cocina"
-                android:onClick=""
                  />
         </LinearLayout>
     </LinearLayout>
@@ -96,7 +90,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerInParent="true"
                 android:id="@+id/Switch_bano"
-                android:onClick=""
+
                  />
         </LinearLayout>
     </LinearLayout>
@@ -125,8 +119,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerInParent="true"
                 android:id="@+id/Switch_sala"
-                android:onClick=""
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
+                 />
         </LinearLayout>
     </LinearLayout>
 
@@ -154,8 +147,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerInParent="true"
                 android:id="@+id/Switch_oficina"
-                android:onClick=""
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
+                />
         </LinearLayout>
     </LinearLayout>
 
@@ -183,8 +175,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerInParent="true"
                 android:id="@+id/Switch_cochera"
-                android:onClick=""
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
+                />
         </LinearLayout>
     </LinearLayout>
 

@@ -44,7 +44,7 @@ public class SwitchsFocos extends RecyclerView.Adapter<SwitchsFocos.ViewHolderSw
 
         public ViewHolderSwitchs(@NonNull View itemView) {
             super(itemView);
-            Etilugar=itemView.findViewById(R.id.lugar);
+            //Etilugar=itemView.findViewById(R.id.lugar);
 
         }
     }
