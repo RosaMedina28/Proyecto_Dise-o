@@ -22,12 +22,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="70dp"
         android:background="@drawable/tempera"
-<<<<<<< HEAD
         />
-
-=======
-        android:elevation="15dp" />
->>>>>>> 2b8cb154aea4ff782f31233ab1255a6df0494a25
     <androidx.cardview.widget.CardView
         android:layout_width="193dp"
         android:layout_height="150dp"

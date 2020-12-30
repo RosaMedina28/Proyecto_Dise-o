@@ -105,6 +105,7 @@ private boolean isActivateRB;
     }*/
 
     public void evento_login(View view) {
+        Toast.makeText(this, "Entre al evento login", Toast.LENGTH_SHORT).show();
         String urlend = "http://192.168.0.31:8000/api/loginas";
         JSONObject datos = new JSONObject();
 
@@ -118,11 +119,12 @@ private boolean isActivateRB;
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
+        Toast.makeText(this, campo_email.getText().toString(), Toast.LENGTH_SHORT).show();
         JsonObjectRequest postrequest = new JsonObjectRequest(Request.Method.POST, urlend, datos, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {
+                    Toast.makeText(MainActivity.this, (CharSequence) datos, Toast.LENGTH_SHORT).show();
                     String token = response.getString("token");
                     Toast.makeText(MainActivity.this, response.toString(), Toast.LENGTH_SHORT).show();
                 } catch (JSONException e) {
@@ -132,8 +134,8 @@ private boolean isActivateRB;
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
-            }
+                Toast.makeText(MainActivity.this, "No se hizo peticion ", Toast.LENGTH_SHORT).show();
+            }  {}
         });
         queue.add(postrequest);
 
