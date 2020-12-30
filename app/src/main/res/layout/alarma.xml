@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/alarma"
-        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         />
     <Button
         android:layout_width="350dp"
@@ -21,4 +21,9 @@
         android:textColor="#FFFF"
         android:backgroundTint="#9C27B0"
         android:textSize="28dp" />
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0d7f3ce180e207b5fa4eb7a16e41c7e3de2ea357
 </RelativeLayout>

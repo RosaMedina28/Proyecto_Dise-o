@@ -6,6 +6,10 @@
     android:background="@drawable/icono"
     >
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0d7f3ce180e207b5fa4eb7a16e41c7e3de2ea357
     <ImageButton
         android:id="@+id/tem"
         android:layout_width="wrap_content"
@@ -13,6 +17,7 @@
         android:background="@drawable/tempera"
         android:layout_centerVertical="true"
         />
+<<<<<<< HEAD
     <Button
         android:id="@+id/hum"
         android:layout_width="330dp"
@@ -22,10 +27,13 @@
         android:baselineAligned="true" />
 
 >
+=======
+
+
+>>>>>>> 0d7f3ce180e207b5fa4eb7a16e41c7e3de2ea357
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:text="23%"
         android:textSize="63dp"
         android:id="@+id/temperrrr"

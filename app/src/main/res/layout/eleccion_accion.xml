@@ -7,13 +7,19 @@
         android:orientation="vertical"
     android:background="@drawable/icono"
         >
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="57dp"
-        android:text=""
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity=""
         android:layout_marginLeft="10dp"
-        android:textColor="#000000"
-        android:textSize="19dp" />
+        android:text="MENÚ"
+        android:textColor="#9C27B0"
+        android:textSize="39dp" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="210dp"
         android:layout_height="150dp"
@@ -21,8 +27,13 @@
         android:layout_column="0"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="70dp"
+<<<<<<< HEAD
         android:background="@drawable/tempera"
         />
+=======
+        android:background="@drawable/tempera" />
+
+>>>>>>> 0d7f3ce180e207b5fa4eb7a16e41c7e3de2ea357
     <androidx.cardview.widget.CardView
         android:layout_width="193dp"
         android:layout_height="150dp"
@@ -31,7 +42,7 @@
         android:layout_marginTop="70dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/control"
-        android:tint="@android:color/background_light" />
+         />
 
     <androidx.cardview.widget.CardView
         android:layout_width="218dp"
@@ -40,6 +51,7 @@
         android:layout_column="0"
         android:layout_gravity="center"
         android:background="@drawable/humedad" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="198dp"
         android:layout_height="150dp"
@@ -47,13 +59,15 @@
         android:layout_column="2"
         android:layout_gravity="center"
         android:background="@drawable/alarma" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="218dp"
         android:layout_height="150dp"
         android:layout_row="1"
         android:layout_column="0"
         android:layout_marginTop="440dp"
-        android:background="@drawable/cochera" />
+        android:background="@drawable/control"/>
+
     <androidx.cardview.widget.CardView
         android:layout_width="198dp"
         android:layout_height="151dp"
