@@ -6,7 +6,7 @@
     android:background="@drawable/icono"
     >
 
-<<<<<<< HEAD
+
     <ImageButton
         android:id="@+id/tem"
         android:layout_width="wrap_content"
@@ -14,20 +14,11 @@
         android:background="@drawable/tempera"
         android:layout_centerVertical="true"
         />
-=======
-    <Button
-        android:id="@+id/hum"
-        android:layout_width="330dp"
-        android:layout_height="310dp"
-        android:layout_centerInParent="true"
-        android:background="@drawable/tempera"
-        android:baselineAligned="true" />
 
->>>>>>> 2b8cb154aea4ff782f31233ab1255a6df0494a25
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:text="23%"
         android:textSize="63dp"
         android:id="@+id/temperrrr"
