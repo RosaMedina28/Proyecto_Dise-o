@@ -20,6 +20,10 @@
         android:text="APAGAR"
         android:textColor="#FFFF"
         android:backgroundTint="#9C27B0"
+<<<<<<< HEAD
         android:textSize="28dp" />
+=======
+        android:textSize="28dp"/>
+>>>>>>> 2b8cb154aea4ff782f31233ab1255a6df0494a25
 
 </RelativeLayout>

@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@drawable/oo">
-
-
     <EditText
         android:id="@+id/edit_email_l"
         android:layout_width="330dp"
@@ -20,7 +18,6 @@
         android:hint="Correo"
         android:textColorHint="#EDE7F6"
         android:textSize="24dp" />
-
     <EditText
         android:id="@+id/edit_password_l"
         android:layout_width="330dp"
@@ -34,19 +31,25 @@
         android:inputType="textPassword"
         android:textSize="24dp"
         android:textColorHint="#EDE7F6"/>
-
+    <RadioButton
+        android:id="@+id/RBsesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_password_l"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:hint="Mantener sesion activa" />
     <Button
         android:id="@+id/btn_login"
         android:onClick="evento_login"
         android:layout_width="222dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edit_password_l"
+        android:layout_below="@id/RBsesion"
        android:layout_centerInParent="true"
         android:layout_marginTop="27dp"
         android:background="#9575DC"
         android:textColor="#EDE7F6"
         android:text="Iniciar Sesion" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

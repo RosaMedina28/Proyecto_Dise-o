@@ -22,9 +22,6 @@ public class menuActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_menu);
 
-
-
-
         new Handler().postDelayed(new Runnable() {
             public void run() {
                 //PERMISOS

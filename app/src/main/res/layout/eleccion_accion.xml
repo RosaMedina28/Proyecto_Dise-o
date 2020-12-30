@@ -14,24 +14,20 @@
         android:layout_marginLeft="10dp"
         android:textColor="#000000"
         android:textSize="19dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="57dp"
-        android:text=" "
-        android:layout_marginLeft="10dp"
-        android:textColor="#000000"
-        android:textSize="19dp" />
     <androidx.cardview.widget.CardView
         android:layout_width="210dp"
         android:layout_height="150dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="10dp"
         android:layout_row="1"
         android:layout_column="0"
-        android:elevation="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
         android:background="@drawable/tempera"
+<<<<<<< HEAD
         />
 
+=======
+        android:elevation="15dp" />
+>>>>>>> 2b8cb154aea4ff782f31233ab1255a6df0494a25
     <androidx.cardview.widget.CardView
         android:layout_width="193dp"
         android:layout_height="150dp"
@@ -40,7 +36,6 @@
         android:layout_marginTop="70dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/control"
-        android:backgroundTint=""
         android:tint="@android:color/background_light" />
 
     <androidx.cardview.widget.CardView
@@ -50,7 +45,6 @@
         android:layout_column="0"
         android:layout_gravity="center"
         android:background="@drawable/humedad" />
-
     <androidx.cardview.widget.CardView
         android:layout_width="198dp"
         android:layout_height="150dp"
@@ -65,7 +59,6 @@
         android:layout_column="0"
         android:layout_marginTop="440dp"
         android:background="@drawable/cochera" />
-
     <androidx.cardview.widget.CardView
         android:layout_width="198dp"
         android:layout_height="151dp"
@@ -74,6 +67,5 @@
         android:layout_gravity="center"
         android:layout_marginTop="350dp"
         android:background="@drawable/cerrar" />
-
 </GridLayout>
 
